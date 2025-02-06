@@ -38,43 +38,34 @@ The service allows you to
     In more details: <https://github.com/MikhailCherepanovD/notification_service_flask>
 
 
-* **Messange_Sending_Service:**  Microservice that that reads information about tracked tickets from a dedicated view and sends it to the message broker Apache Kafka at specified time intervals. 
+* **Email_Message_Service** and **Telegram_Message_Service:** Microservices that listen to Apache Kafka and send messages to email and Telegram. **Telegram_Message_Service** is connected to the Redis key-value storage for storing client chat IDs.  
 
-    Writen on C++ Dragon Framework. 
-    
-    In more details: <https://github.com/MikhailCherepanovD/sending_messages_notification_service>
+    Written in Python Flask Framework.  
 
-* **Email_Message_Sirvice**  and **Telegram_Message_Sirvice:** Microservices that is listen Apache Kafka and send messages to email and telegram. Telegram_Message_Sirvice  is connected to the redis key-value storage for storing client chat IDs.
+    More details: <https://github.com/MikhailCherepanovD/notification_email_sender>  
 
-    Writen on Python Flask Framework. 
+    And: <https://github.com/MikhailCherepanovD/notification_telegram_sender>  
 
-    In more details: <https://github.com/MikhailCherepanovD/notification_email_sender>
+* **DB:** PostgreSQL database. It contains 6 regular tables, a trigger, a table for the trigger, and a view. Some data processing functions are also written here.  
 
-    And: <https://github.com/MikhailCherepanovD/notification_telegram_sender>
+    More details: <https://github.com/MikhailCherepanovD/notification_email_sender>  
 
 
-* **DB:** Postgresql database. It contains 6 regular tables, a trigger, a table for the trigger, and a view. Some data processing functions are also written here.
+The logic written in Web_Page_Manager can be transferred to the frontend or to Notification_Service, but I was interested in implementing a RESTful API for the interaction of two backend services.  
 
-    In more details: <https://github.com/MikhailCherepanovD/notification_email_sender>
+## Deploy  
+
+Each microservice is packaged in a Docker container and managed via Docker Compose. The application is deployed and running on a Yandex Cloud VM.  
+
+Link to deploy repository: <https://github.com/MikhailCherepanovD/notification_service_deploy>  
+
+Link to my DockerHub: <https://hub.docker.com/u/cherepmd>  
+
+### To run  
 
 
-
- The logic written in Web_Page_Manager can be transferred to the frontend or  to the Notification_Service, but I was interested in implementing the RESTfull API for the interaction of two backend services.
-
- ## Deploy
-
-Each of the microservices is assembled in a docker container and managed via docker-compose. The application is deployed and running on the Yandex Cloud VM.
-
-Link to deploy repository: <https://github.com/MikhailCherepanovD/notification_service_deploy>
-
-Link to my Dockerhub: <https://hub.docker.com/u/cherepmd>
-
-### To run
-
-    git clone https://github.com/MikhailCherepanovD/notification_service_deploy
-
-    docker-compose up -d
-
+    git clone https://github.com/MikhailCherepanovD/notification_service_deploy  
+    docker-compose up -d 
  ## Tests
 
 Tests for Notification_Service was written in Postman.
