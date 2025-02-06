@@ -17,7 +17,7 @@ The service allows you to
 
 ## Architecture
 
-[](architecture_scheme.jpg)
+[](architecture_scheme.png)
 
 ## Сomponents
 
