@@ -27,20 +27,30 @@ The service allows you to
     - Route management (CRUD operations);  
     - Integration with the Aviasales API to retrieve route information; 
     
-    Writen on C++ Dragon Framework. 
+    Writen on C++ Dragon framework. 
     
     In more details: <https://github.com/MikhailCherepanovD/notification_service_drogon>
     
-* **Web_Page_Manager:**  Microservice for web pages managment and sending queries to Notification_Service, a layer between the web client and the main backend server. User session management is implemented here.
+* **Web_Page_Manager:**  Microservice for web pages managment and sending queries to Notification_Service, a layer between the web client and the main backend server.
 
-    Writen on Python Flask Framework. 
+    Writen on Python Flask framework. 
 
     In more details: <https://github.com/MikhailCherepanovD/notification_service_flask>
 
 
-* **Email_Message_Service** and **Telegram_Message_Service:** Microservices that listen to Apache Kafka and send messages to email and Telegram. **Telegram_Message_Service** is connected to the Redis key-value storage for storing client chat IDs.  
 
-    Written in Python Flask Framework.  
+* **Sending_Message_Servise:**  Microservice in an endless loop checks the table allocated to it in the database for routes, information about which needs to be updated. If the routes for updating are found, the server sends a request to Notification_Service and after that send ticket info to Apache Kafka.
+
+    Writen on C++ Dragon framework. 
+
+    In more details: <https://github.com/MikhailCherepanovD/sending_messages_notification_service>
+
+
+
+
+* **Email_Message_Service** and **Telegram_Message_Service:** Microservices that listen to Apache Kafka and send messages to email and Telegram. Telegram_Message_Service is connected to the Redis key-value storage for storing client chat IDs.  
+
+    Written in Python Flask framework.  
 
     More details: <https://github.com/MikhailCherepanovD/notification_email_sender>  
 
@@ -48,10 +58,9 @@ The service allows you to
 
 * **DB:** PostgreSQL database. It contains 6 regular tables, a trigger, a table for the trigger, and a view. Some data processing functions are also written here.  
 
-    More details: <https://github.com/MikhailCherepanovD/notification_email_sender>  
+    More details: <https://github.com/MikhailCherepanovD/notification_service_database>  
 
 
-The logic written in Web_Page_Manager can be transferred to the frontend or to Notification_Service, but I was interested in implementing a RESTful API for the interaction of two backend services.  
 
 ## Deploy  
 
