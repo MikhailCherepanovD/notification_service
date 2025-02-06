@@ -1,5 +1,14 @@
 # Flight ticket tracking application
 
+## Table of Contents
+1. [Motivation](#motivation)
+2. [Functionality](#functionality)
+3. [Architecture](#architecture)
+4. [Сomponents](#components)
+5. [Deploy](#deploy)
+6. [Tests](#tests)
+7. [Appearence](#appearence)
+
 ## Motivation
 
 I often fly on airplanes so that I know in advance about which dates I want to fly (for example, from January 27 to January 30). I don't care about the exact date of the trip, and I want to save money and fly cheaper. 
