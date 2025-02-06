@@ -61,13 +61,13 @@ The service allows you to
 
     Written in Python Flask framework.  
 
-    More details: <https://github.com/MikhailCherepanovD/notification_email_sender>  
+    In more details: <https://github.com/MikhailCherepanovD/notification_email_sender>  
 
     And: <https://github.com/MikhailCherepanovD/notification_telegram_sender>  
 
 * **DB:** PostgreSQL database. It contains 6 regular tables, a trigger, a table for the trigger, and a view. Some data processing functions are also written here.  
 
-    More details: <https://github.com/MikhailCherepanovD/notification_service_database>  
+    In more details: <https://github.com/MikhailCherepanovD/notification_service_database>  
 
 
 
