@@ -17,7 +17,7 @@ The service allows you to
 
 ## Architecture
 
-[](architecture_scheme.png)
+![](architecture_scheme.png)
 
 ## Сomponents
 
@@ -74,3 +74,9 @@ Link to my Dockerhub: <https://hub.docker.com/u/cherepmd>
     git clone https://github.com/MikhailCherepanovD/notification_service_deploy
 
     docker-compose up -d
+
+ ## Tests
+
+Tests for Notification_Service was written in Postman.
+
+Get tests in Json formate: <https://github.com/MikhailCherepanovD/notification_service_tests_postman>
