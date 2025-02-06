@@ -6,7 +6,7 @@ I often fly on airplanes so that I know in advance about which dates I want to f
 
 The prices of plane tickets depend on many factors: the current demand for tickets, the date of the trip, airline promotions, the phases of the moon, the constellations of Oreon and etc.  Therefore, the best option to buy a cheap ticket is to monitor prices in real time and buy when they drop! It is even more convenient to receive notifications about the current minimum ticket prices on set dates in your messenger.
 
-Try application: <http://84.201.170.212:8082/>
+Try application: <http://84.201.170.212:8082/> (If the application extends beyond the boundaries of your browser, try zooming out)
 ## Functionality
 
 The service allows you to
@@ -80,3 +80,8 @@ Link to my Dockerhub: <https://hub.docker.com/u/cherepmd>
 Tests for Notification_Service was written in Postman.
 
 Get tests in Json formate: <https://github.com/MikhailCherepanovD/notification_service_tests_postman>
+
+ ##  Appearence
+
+
+![](Appearance.png)
