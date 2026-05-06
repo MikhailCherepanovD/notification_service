@@ -13,7 +13,7 @@
 
 I often fly on airplanes so that I know in advance about which dates I want to fly (for example, from January 27 to January 30). I don't care about the exact date of the trip, and I want to save money and fly cheaper. 
 
-The prices of plane tickets depend on many factors: the current demand for tickets, the date of the trip, airline promotions, the phases of the moon, the constellations of Oreon and etc.  Therefore, the best option to buy a cheap ticket is to monitor prices in real time and buy when they drop! It is even more convenient to receive notifications about the current minimum ticket prices on set dates in your messenger.
+The prices of plane tickets depend on many factors: the current demand for tickets, the date of the trip, airline promotions and etc.  Therefore, the best option to buy a cheap ticket is to monitor prices in real time and buy when they drop! It is even more convenient to receive notifications about the current minimum ticket prices on set dates in your messenger.
 
 <!--Try application: <http://84.201.170.212:8082/> (If the application extends beyond the boundaries of your browser, try zooming out)-->
 ## Functionality
